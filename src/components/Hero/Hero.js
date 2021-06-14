@@ -1,10 +1,15 @@
-import React from 'react'
+import React from 'react';
+import {Section,Container} from "./Hero.styles";
 
-const Hero = () => {
+const Hero = ({image,title,desc}) => {
     return (
-        <div>
-            
-        </div>
+        <Section image={image}>
+            <Container>
+                <h1>{title}</h1>
+                <p>{desc}n</p>
+                <button>Learn More</button>
+            </Container>
+        </Section>
     )
 }
 
